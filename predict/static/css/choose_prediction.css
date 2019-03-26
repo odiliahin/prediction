@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 /*-----------------------------HEADER's START------------------------------*/
@@ -41,48 +42,150 @@ body {
 
 /*-----------------------------BODY's START------------------------------*/
 .container {
-    border: 1px solid;
     width: 1140px;
     margin: 0 auto;
-    height: 87%;
+    padding-top: 30px;
+    height: 88%;
     display: flex;
     justify-content: center;
 }
 
 .prediction-day {
-    border: 1px solid black;
+    border: 3px solid #31c300;
+    border-radius: 10px;
     width: 365px;
-    background-color: rgba(0, 255, 120, 0.26);
+    height: 355px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.prediction-day span {
-    font-size: 66px;
+.prediction-day a {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: center;
     font-weight: 600;
-    line-height: 100px;
+    text-decoration: none;
+    color: black;
+    margin: 20px auto 0 auto;
+}
+
+.prediction-day a:hover {
+    border: 2px solid #31c300;
+    color: #31c300;
+    transition-duration: 0.3s;
+
+}
+
+.day-text {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 60px;
+    color: black;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.day-text-span {
+    color: #31c300;
 }
 
 .prediction-week {
-    border: 1px solid green;
-    width: 365px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: rgba(255, 209, 0, 0.31);
+    border: 3px solid #ffa900;
+    border-radius: 10px;
+    width: 370px;
+    height: 355px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.prediction-week span {
-    font-size: 66px;
+.prediction-week a {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: center;
     font-weight: 600;
-    line-height: 100px;
+    text-decoration: none;
+    color: black;
+    margin: 20px auto;
+}
+
+.prediction-week a:hover {
+    border: 2px solid #ffa900;
+    color: #ffa900;
+    transition-duration: 0.3s;
+
+}
+
+.week-text {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 60px;
+    color: black;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.week-text-span {
+    color: #ffa900;
 }
 
 .prediction-month {
-    border: 1px solid red;
+    border: 3px solid #ff0e00;
+    border-radius: 10px;
     width: 365px;
-    background-color: rgba(255, 0, 3, 0.29);
+    height: 355px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.prediction-month span {
-    font-size: 66px;
+.prediction-month a {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 110px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: center;
     font-weight: 600;
-    line-height: 100px;
+    text-decoration: none;
+    color: black;
+    margin: 20px auto 0 auto;
+}
+
+.prediction-month a:hover {
+    border: 2px solid #ff0e00;
+    color: #ff0e00;
+    transition-duration: 0.3s;
+}
+
+.month-text {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 60px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.month-text-span {
+    color: #ff0e00;
+}
+
+.bg-text-ch span {
+    position: absolute;
+    bottom: 45px;
+    right: 5px;
+    z-index: -999;
+    font-weight: 900;
+    font-size: 150px;
+    color: rgba(128, 128, 128, 0.06);
+
 }

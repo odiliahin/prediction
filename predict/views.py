@@ -9,3 +9,7 @@ def predictions_for_day_list(request):
 
 def index(request):
     return render(request, 'predict/index.html')
+
+
+def choose_prediction(request):
+    return render(request, 'predict/choose_prediction.html')

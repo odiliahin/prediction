@@ -41,47 +41,48 @@ body {
 
 /*-----------------------------BODY's START------------------------------*/
 .container {
-    height: 80%;
+    border: 1px solid;
+    width: 1140px;
+    margin: 0 auto;
+    height: 87%;
     display: flex;
     justify-content: center;
-    padding-top: 150px;
 }
 
-.prediction-text {
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid rgb(255, 6, 0);
-    border-radius: 10px;
-    height: 115px;
-    padding: 15px 40px 0 40px;
-    background-color: rgb(255, 246, 249);
-    text-align: center;
+.prediction-day {
+    border: 1px solid black;
+    width: 365px;
+    background-color: rgba(0, 255, 120, 0.26);
 }
 
-.prediction-text h1 {
-    margin: 0;
-    padding-bottom: 20px;
-
+.prediction-day span {
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 100px;
 }
 
-.prediction-text span {
-    text-align: center;
-    vertical-align: middle;
-    margin: 0;
-    line-height: 30px;
-    padding: auto 0;
-    font-weight: 500;
-    color: black;
-    font-size: 28px;
+.prediction-week {
+    border: 1px solid green;
+    width: 365px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(255, 209, 0, 0.31);
 }
 
+.prediction-week span {
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 100px;
+}
 
+.prediction-month {
+    border: 1px solid red;
+    width: 365px;
+    background-color: rgba(255, 0, 3, 0.29);
+}
 
-.bg-text span {
-    position: absolute;
-    left: -25px;
-    top: 55px;
-    z-index: -999;
-    font-weight: 900;
-    font-size: 150px;
-    color: rgba(128, 128, 128, 0.06);
+.prediction-month span {
+    font-size: 66px;
+    font-weight: 600;
+    line-height: 100px;
 }
